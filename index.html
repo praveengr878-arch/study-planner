@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="sheet">
+    <header>
+      <h1>Study Planner</h1>
+      <p id="summary" class="summary"></p>
+    </header>
+
+    <form id="task-form" class="add">
+      <input id="title" type="text" placeholder="What do you need to study?" required maxlength="120" aria-label="Task title">
+      <input id="subject" type="text" placeholder="Subject" maxlength="30" aria-label="Subject">
+      <input id="due" type="date" aria-label="Due date">
+      <button type="submit">Add task</button>
+    </form>
+
+    <nav class="filters" aria-label="Filter tasks">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="pending">Pending</button>
+      <button data-filter="done">Done</button>
+    </nav>
+
+    <ul id="task-list" class="tasks"></ul>
+    <p id="empty" class="empty" hidden>No tasks here. Add one above to get started.</p>
+    <p id="error" class="error" role="alert" hidden></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

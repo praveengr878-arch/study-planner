@@ -1,0 +1,18 @@
+[
+  {
+    "id": "sample1",
+    "title": "Revise dynamic programming problems",
+    "subject": "DAA",
+    "due": null,
+    "done": false,
+    "createdAt": "2026-11-24T00:00:00.000Z"
+  },
+  {
+    "id": "sample2",
+    "title": "Finish process scheduling notes",
+    "subject": "OS",
+    "due": null,
+    "done": true,
+    "createdAt": "2026-11-24T00:00:00.000Z"
+  }
+]
